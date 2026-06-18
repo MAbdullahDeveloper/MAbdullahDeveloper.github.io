@@ -1,74 +1,76 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+.hero{
+    min-height:85vh;
+    display:flex;
+    align-items:center;
+    padding:80px;
 }
 
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    font-family:Arial, sans-serif;
-    background:#1a1d23;
-    color:white;
-}
-
-/* NAVBAR */
-
-nav{
-    position:sticky;
-    top:0;
+.hero-content{
+    width:100%;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 60px;
-    background:#242933;
+    gap:60px;
 }
 
-.logo{
-    font-size:1.2rem;
-    font-weight:bold;
+.hero-left{
+    flex:1;
 }
 
-nav ul{
+.hero-left h1{
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero-left h2{
+    color:#4f8cff;
+    margin-bottom:25px;
+    font-weight:500;
+}
+
+.hero-left p{
+    font-size:1.1rem;
+    line-height:1.8;
+    margin-bottom:15px;
+    max-width:650px;
+}
+
+.hero-buttons{
     display:flex;
-    list-style:none;
-    gap:25px;
+    gap:15px;
+    margin-top:30px;
 }
 
-nav a{
-    color:white;
+.hero-buttons a{
     text-decoration:none;
+    color:white;
+    padding:12px 24px;
+    border-radius:8px;
+    background:#4f8cff;
 }
 
-/* HERO */
+.hero-right{
+    width:320px;
+}
 
-.hero{
-    min-height:70vh;
+.stack-card{
+    background:#242933;
+    border-radius:12px;
+    padding:25px;
+}
+
+.stack-card h3{
+    margin-bottom:20px;
+}
+
+.stack-items{
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    padding:80px;
+    flex-wrap:wrap;
+    gap:10px;
 }
 
-.hero h1{
-    font-size:3rem;
-    margin-bottom:20px;
-}
-
-.hero p{
-    max-width:700px;
-    line-height:1.6;
-}
-
-/* SECTIONS */
-
-section{
-    padding:80px;
-    min-height:50vh;
-}
-
-section h2{
-    margin-bottom:20px;
+.stack-items span{
+    background:#1a1d23;
+    padding:10px 15px;
+    border-radius:8px;
 }
