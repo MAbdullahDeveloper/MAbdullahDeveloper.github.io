@@ -4,52 +4,71 @@
     box-sizing:border-box;
 }
 
-body{
-    background:#111;
-    color:white;
-    font-family:Arial, sans-serif;
+html{
+    scroll-behavior:smooth;
 }
 
+body{
+    font-family:Arial, sans-serif;
+    background:#1a1d23;
+    color:white;
+}
+
+/* NAVBAR */
+
+nav{
+    position:sticky;
+    top:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 60px;
+    background:#242933;
+}
+
+.logo{
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+/* HERO */
+
 .hero{
-    height:100vh;
+    min-height:70vh;
     display:flex;
     flex-direction:column;
     justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:20px;
+    padding:80px;
 }
 
 .hero h1{
-    font-size:4rem;
-    margin-bottom:10px;
-}
-
-.hero h2{
-    color:#999;
+    font-size:3rem;
     margin-bottom:20px;
 }
 
 .hero p{
     max-width:700px;
     line-height:1.6;
-    margin-bottom:30px;
 }
 
-.buttons{
-    display:flex;
-    gap:15px;
+/* SECTIONS */
+
+section{
+    padding:80px;
+    min-height:50vh;
 }
 
-.buttons a{
-    text-decoration:none;
-    color:white;
-    border:1px solid white;
-    padding:12px 25px;
-    border-radius:5px;
-}
-
-.buttons a:hover{
-    background:white;
-    color:black;
+section h2{
+    margin-bottom:20px;
 }
